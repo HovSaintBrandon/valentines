@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Will You Be My Valentine? 💕</title>
+  <meta name="description" content="A special Valentine's Day surprise for the love of my life" />
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=Quicksand:wght@300;400;500;600&display=swap"
+    rel="stylesheet">
+
+  <!-- Canvas Confetti -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <!-- Floating Hearts Background -->
+  <div class="floating-hearts-container" id="floatingHearts"></div>
+  <!-- Hero Section -->
+  <section class="hero-section romantic-gradient">
+    <div class="hero-content fade-in-up">
+      <div class="hero-badge">
+        <svg class="icon-md text-primary fill-primary animate-heartbeat" viewBox="0 0 24 24" fill="currentColor">
+          <path
+            d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" />
+        </svg>
+        <span>A Special Message For You</span>
+        <svg class="icon-md text-primary fill-primary animate-heartbeat" style="animation-delay: 0.5s"
+          viewBox="0 0 24 24" fill="currentColor">
+          <path
+            d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" />
+        </svg>
+      </div>
+
+      <h1 class="hero-title">My Dearest Love</h1>
+
+      <p class="hero-subtitle">
+        You Make Every Day Feel Like Valentine's Day
+        <svg class="icon sparkle text-gold" style="position: absolute; top: -8px; right: -24px;" viewBox="0 0 24 24"
+          fill="none" stroke="currentColor" stroke-width="2">
+          <path
+            d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z" />
+        </svg>
+      </p>
+
+      <p class="hero-message">
+        Every moment with you is a treasure, every smile you share lights up my world.
+        This is my heart, written in code, just for you. 💕
+      </p>
+
+      <a href="#proposal" class="scroll-indicator">
+        <span>Scroll to discover</span>
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="m6 9 6 6 6-6" />
+        </svg>
+      </a>
+    </div>
+  </section>
+  <!-- Proposal Section -->
+  <section class="proposal-section romantic-gradient" id="proposal">
+    <div class="proposal-content fade-in-up" id="proposalContainer">
+      <!-- Question State -->
+      <div id="questionState">
+        <div class="hero-badge">
+          <svg class="icon-lg text-primary fill-primary animate-heartbeat" viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" />
+          </svg>
+          <span>The Big Question</span>
+          <svg class="icon-lg text-primary fill-primary animate-heartbeat" style="animation-delay: 0.5s"
+            viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" />
+          </svg>
+        </div>
+
+        <h2 class="proposal-question">Will You Be My</h2>
+
+        <div class="proposal-valentine">
+          Valentine?
+          <svg class="icon-lg sparkle text-gold" style="position: absolute; top: -16px; right: -32px;"
+            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path
+              d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z" />
+          </svg>
+          <svg class="icon sparkle text-gold"
+            style="position: absolute; bottom: -16px; left: -32px; animation-delay: 0.3s" viewBox="0 0 24 24"
+            fill="none" stroke="currentColor" stroke-width="2">
+            <path
+              d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z" />
+          </svg>
+        </div>
+
+        <div class="buttons-container">
+          <button class="yes-button" id="yesButton">Yes! 💕</button>
+          <button class="no-button" id="noButton">No</button>
+        </div>
+
+        <p class="hint-text hidden" id="hintText">Psst... just say yes! 🥺</p>
+      </div>
+
+      <!-- Celebration State -->
+      <div class="celebration-container hidden fade-in-up" id="celebrationState">
+        <svg class="icon-2xl text-gold sparkle" style="margin: 0 auto 1.5rem; display: block;" viewBox="0 0 24 24"
+          fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M5.8 11.3 2 22l10.7-3.79" />
+          <path d="M4 3h.01" />
+          <path d="M22 8h.01" />
+          <path d="M15 2h.01" />
+          <path d="M22 20h.01" />
+          <path d="m22 2-2.24.75a2.9 2.9 0 0 0-1.96 3.12c.1.86-.57 1.63-1.45 1.63h-.38c-.86 0-1.6.6-1.76 1.44L14 10" />
+          <path d="m22 13-.82-.33c-.86-.34-1.82.2-1.98 1.11c-.11.7-.72 1.22-1.43 1.22H17" />
+          <path d="m11 2 .33.82c.34.86-.2 1.82-1.11 1.98C9.52 4.9 9 5.52 9 6.23V7" />
+          <path d="M11 13c1.93 1.93 2.83 4.17 2 5-.83.83-3.07-.07-5-2-1.93-1.93-2.83-4.17-2-5 .83-.83 3.07.07 5 2Z" />
+        </svg>
+
+        <h2 class="proposal-question">Yay!!! 🎉</h2>
+
+        <div class="hearts-row">
+          <svg class="icon-xl text-primary fill-primary animate-heartbeat" viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" />
+          </svg>
+          <svg class="icon-2xl text-primary fill-primary animate-heartbeat" style="animation-delay: 0.2s"
+            viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" />
+          </svg>
+          <svg class="icon-xl text-primary fill-primary animate-heartbeat" style="animation-delay: 0.4s"
+            viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" />
+          </svg>
+        </div>
+
+        <p class="celebration-message">You've made me the happiest person alive!</p>
+        <p class="celebration-submessage">I promise to make this the most special Valentine's Day ever. You + Me =
+          Forever 💕</p>
+
+        <div class="hearts-row" style="margin-top: 3rem;">
+          <svg class="icon floating-heart text-primary fill-primary" viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" />
+          </svg>
+          <svg class="icon floating-heart text-primary fill-primary" style="animation-delay: 0.2s" viewBox="0 0 24 24"
+            fill="currentColor">
+            <path
+              d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" />
+          </svg>
+          <svg class="icon floating-heart text-primary fill-primary" style="animation-delay: 0.4s" viewBox="0 0 24 24"
+            fill="currentColor">
+            <path
+              d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" />
+          </svg>
+          <svg class="icon floating-heart text-primary fill-primary" style="animation-delay: 0.6s" viewBox="0 0 24 24"
+            fill="currentColor">
+            <path
+              d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" />
+          </svg>
+          <svg class="icon floating-heart text-primary fill-primary" style="animation-delay: 0.8s" viewBox="0 0 24 24"
+            fill="currentColor">
+            <path
+              d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" />
+          </svg>
+          <svg class="icon floating-heart text-primary fill-primary" style="animation-delay: 1s" viewBox="0 0 24 24"
+            fill="currentColor">
+            <path
+              d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" />
+          </svg>
+          <svg class="icon floating-heart text-primary fill-primary" style="animation-delay: 1.2s" viewBox="0 0 24 24"
+            fill="currentColor">
+            <path
+              d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" />
+          </svg>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Countdown Section -->
+  <section class="countdown-section romantic-gradient" id="countdown">
+    <div class="countdown-content fade-in-up">
+      <!-- Regular Countdown -->
+      <div id="countdownState">
+        <div class="hero-badge">
+          <svg class="icon text-primary fill-primary" viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" />
+          </svg>
+          <span>Counting down to</span>
+          <svg class="icon text-primary fill-primary" viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" />
+          </svg>
+        </div>
+
+        <h2 class="countdown-title">Valentine's Day</h2>
+        <p class="countdown-date">February 14th 💕</p>
+
+        <div class="countdown-grid">
+          <div class="countdown-box">
+            <div class="countdown-value" id="days">00</div>
+            <div class="countdown-label">Days</div>
+          </div>
+          <div class="countdown-box">
+            <div class="countdown-value" id="hours">00</div>
+            <div class="countdown-label">Hours</div>
+          </div>
+          <div class="countdown-box">
+            <div class="countdown-value" id="minutes">00</div>
+            <div class="countdown-label">Minutes</div>
+          </div>
+          <div class="countdown-box">
+            <div class="countdown-value" id="seconds">00</div>
+            <div class="countdown-label">Seconds</div>
+          </div>
+        </div>
+
+        <div class="countdown-message">
+          <span>Until I can call you</span>
+          <span>My Valentine</span>
+          <svg class="icon-sm text-primary fill-primary animate-heartbeat" viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" />
+          </svg>
+        </div>
+      </div>
+
+      <!-- Valentine's Day Celebration -->
+      <div class="valentines-celebration hidden fade-in-up" id="valentinesCelebration">
+        <div class="hero-badge">
+          <svg class="icon-lg text-gold sparkle" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M20 12V8H6a2 2 0 0 1-2-2c0-1.1.9-2 2-2h12v4" />
+            <path d="M4 6v12c0 1.1.9 2 2 2h14v-4" />
+            <path d="M18 12a2 2 0 0 0 0 4h4v-4Z" />
+          </svg>
+          <span>It's Finally Here!</span>
+          <svg class="icon-lg text-gold sparkle" style="animation-delay: 0.5s" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2">
+            <path d="M20 12V8H6a2 2 0 0 1-2-2c0-1.1.9-2 2-2h12v4" />
+            <path d="M4 6v12c0 1.1.9 2 2 2h14v-4" />
+            <path d="M18 12a2 2 0 0 0 0 4h4v-4Z" />
+          </svg>
+        </div>
+
+        <h2>Happy Valentine's Day!</h2>
+
+        <div class="hearts-row" style="position: relative;">
+          <svg class="icon-2xl text-primary fill-primary animate-heartbeat" viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" />
+          </svg>
+          <svg style="width: 96px; height: 96px;" class="text-primary fill-primary animate-heartbeat"
+            viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" />
+          </svg>
+          <svg class="icon-2xl text-primary fill-primary animate-heartbeat" style="animation-delay: 0.4s"
+            viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" />
+          </svg>
+        </div>
+
+        <p>💕 Today is OUR day, my love! 💕</p>
+      </div>
+    </div>
+  </section>
+  <!-- Music Player Section -->
+  <section class="music-section">
+    <div class="music-container">
+      <iframe style="border-radius:12px"
+        src="https://open.spotify.com/embed/track/05S7VaTrGBdizlcLGcnEQb?utm_source=generator" width="100%" height="352"
+        frameBorder="0" allowfullscreen=""
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    </div>
+    </div>
+  </section>
+  </div>
+
+
+  </div>
+  </section>
+  <!-- Photo Gallery Section -->
+  <section class="gallery-section romantic-gradient" id="gallery">
+    <div class="gallery-container">
+      <div class="gallery-header fade-in-up">
+        <div class="hero-badge">
+          <svg class="icon text-gold sparkle" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path
+              d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z" />
+          </svg>
+          <span>Our Memories</span>
+          <svg class="icon text-gold sparkle" style="animation-delay: 0.5s" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2">
+            <path
+              d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z" />
+          </svg>
+        </div>
+        <h2>Moments We've Shared</h2>
+        <p>Every photo tells a story of our love. Add your favorite memories here!</p>
+      </div>
+
+      <div class="gallery-grid">
+        <div class="gallery-item featured">
+          <div class="gallery-placeholder">
+            <svg class="icon-xl" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect width="18" height="18" x="3" y="3" rx="2" ry="2" />
+              <circle cx="9" cy="9" r="2" />
+              <path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21" />
+            </svg>
+            <span>Add your favorite photo</span>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <div class="gallery-placeholder">
+            <svg class="icon-lg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect width="18" height="18" x="3" y="3" rx="2" ry="2" />
+              <circle cx="9" cy="9" r="2" />
+              <path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21" />
+            </svg>
+            <span>Photo 2</span>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <div class="gallery-placeholder">
+            <svg class="icon-lg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect width="18" height="18" x="3" y="3" rx="2" ry="2" />
+              <circle cx="9" cy="9" r="2" />
+              <path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21" />
+            </svg>
+            <span>Photo 3</span>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <div class="gallery-placeholder">
+            <svg class="icon-lg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect width="18" height="18" x="3" y="3" rx="2" ry="2" />
+              <circle cx="9" cy="9" r="2" />
+              <path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21" />
+            </svg>
+            <span>Photo 4</span>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <div class="gallery-placeholder">
+            <svg class="icon-lg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect width="18" height="18" x="3" y="3" rx="2" ry="2" />
+              <circle cx="9" cy="9" r="2" />
+              <path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21" />
+            </svg>
+            <span>Photo 5</span>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <div class="gallery-placeholder">
+            <svg class="icon-lg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="m16 13 5.223 3.482a.5.5 0 0 0 .777-.416V7.87a.5.5 0 0 0-.752-.432L16 10.5" />
+              <rect x="2" y="6" width="14" height="12" rx="2" />
+            </svg>
+            <span>Add video</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Song of Songs Section -->
+  <section class="songs-section" id="verses">
+    <div class="songs-container">
+      <div class="songs-header fade-in-up">
+        <div class="hero-badge">
+          <svg class="icon text-gold sparkle" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H19a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1H6.5a1 1 0 0 1 0-5H20" />
+          </svg>
+          <span>Words of Love</span>
+          <svg class="icon text-gold sparkle" style="animation-delay: 0.5s" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2">
+            <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H19a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1H6.5a1 1 0 0 1 0-5H20" />
+          </svg>
+        </div>
+        <h2>Song of Songs</h2>
+        <p>Ancient words of love, timeless and true</p>
+      </div>
+
+      <div class="songs-grid">
+        <div class="verse-card fade-in-up">
+          <blockquote>"You have captivated my heart, my sister, my bride; you have captivated my heart with one glance
+            of your eyes."</blockquote>
+          <div class="verse-reference">
+            <svg class="icon-sm text-primary fill-primary" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" />
+            </svg>
+            <span>Song of Songs 4:9</span>
+          </div>
+        </div>
+
+        <div class="verse-card fade-in-up" style="animation-delay: 0.1s">
+          <blockquote>"I am my beloved's and my beloved is mine."</blockquote>
+          <div class="verse-reference">
+            <svg class="icon-sm text-primary fill-primary" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" />
+            </svg>
+            <span>Song of Songs 6:3</span>
+          </div>
+        </div>
+
+        <div class="verse-card fade-in-up" style="animation-delay: 0.2s">
+          <blockquote>"Place me like a seal over your heart, like a seal on your arm; for love is as strong as death."
+          </blockquote>
+          <div class="verse-reference">
+            <svg class="icon-sm text-primary fill-primary" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" />
+            </svg>
+            <span>Song of Songs 8:6</span>
+          </div>
+        </div>
+
+        <div class="verse-card fade-in-up" style="animation-delay: 0.3s">
+          <blockquote>"You are altogether beautiful, my love; there is no flaw in you."</blockquote>
+          <div class="verse-reference">
+            <svg class="icon-sm text-primary fill-primary" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" />
+            </svg>
+            <span>Song of Songs 4:7</span>
+          </div>
+        </div>
+
+        <div class="verse-card fade-in-up" style="animation-delay: 0.4s">
+          <blockquote>"Many waters cannot quench love; rivers cannot sweep it away."</blockquote>
+          <div class="verse-reference">
+            <svg class="icon-sm text-primary fill-primary" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" />
+            </svg>
+            <span>Song of Songs 8:7</span>
+          </div>
+        </div>
+
+        <div class="verse-card fade-in-up" style="animation-delay: 0.5s">
+          <blockquote>"How beautiful you are, my darling! Oh, how beautiful! Your eyes are doves."</blockquote>
+          <div class="verse-reference">
+            <svg class="icon-sm text-primary fill-primary" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" />
+            </svg>
+            <span>Song of Songs 1:15</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Footer -->
+  <footer class="footer-section romantic-gradient">
+    <div class="footer-container">
+      <div class="footer-icons">
+        <svg class="icon text-gold sparkle" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path
+            d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z" />
+        </svg>
+        <svg class="icon-lg text-primary fill-primary animate-heartbeat" viewBox="0 0 24 24" fill="currentColor">
+          <path
+            d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" />
+        </svg>
+        <svg class="icon text-gold sparkle" style="animation-delay: 0.5s" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2">
+          <path
+            d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z" />
+        </svg>
+      </div>
+
+      <h3 class="footer-title">Forever Yours</h3>
+
+      <p class="footer-message">
+        Every love story is beautiful, but ours is my favorite.
+        Can't wait to spend Valentine's Day with you! 💕
+      </p>
+
+      <div class="footer-divider">
+        <div class="line"></div>
+        <span>With All My Love</span>
+        <div class="line"></div>
+      </div>
+
+      <div class="footer-hearts">
+        <svg style="width: 12px; height: 12px;" class="text-primary" viewBox="0 0 24 24" fill="currentColor">
+          <path
+            d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" />
+        </svg>
+        <svg style="width: 15px; height: 15px;" class="text-primary" viewBox="0 0 24 24" fill="currentColor">
+          <path
+            d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" />
+        </svg>
+        <svg style="width: 18px; height: 18px;" class="text-primary" viewBox="0 0 24 24" fill="currentColor">
+          <path
+            d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" />
+        </svg>
+        <svg style="width: 21px; height: 21px;" class="text-primary" viewBox="0 0 24 24" fill="currentColor">
+          <path
+            d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" />
+        </svg>
+        <svg style="width: 18px; height: 18px;" class="text-primary" viewBox="0 0 24 24" fill="currentColor">
+          <path
+            d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" />
+        </svg>
+        <svg style="width: 15px; height: 15px;" class="text-primary" viewBox="0 0 24 24" fill="currentColor">
+          <path
+            d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" />
+        </svg>
+        <svg style="width: 12px; height: 12px;" class="text-primary" viewBox="0 0 24 24" fill="currentColor">
+          <path
+            d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" />
+        </svg>
+      </div>
+
+      <p class="footer-credit">Made with 💕 for the love of my life</p>
+    </div>
+  </footer>
+  <!-- Hidden Audio Element -->
+  <audio id="audioPlayer" preload="metadata">
+    <!-- Add your song URL here -->
+    <!-- <source src="YOUR_SONG_URL.mp3" type="audio/mpeg"> -->
+  </audio>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
